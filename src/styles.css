@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    --primary-color: #0063A0;
+    --secondary-color: #01C5A2;
+    --third-color: #459FED;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-toggler-icon {
+    color: #fff !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-cifuentes>li {
+    border-radius: 0.5rem;
+    text-align: center !important;
+    transition: all 0.3s ease-in;
+}
+
+.navbar-cifuentes>li>a {
+    color: #fff !important;
+    transition: all 0.3s ease-in;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+.navbar-cifuentes>li:hover {
+    background: var(--third-color) !important;
+}
+
+.navbar-cifuentes>li>a:hover {
+    color: #fff !important;
+}
+
+.current .nav-link {
+    color: var(--secondary-color) !important;
+}
+
+
+/* Content */
+
+body {
+    overflow: hidden;
+    color: var(--primary-color) !important;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--secondary-color) !important;
+    color: #fff !important;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in;
+}
+
+.btn-dark {
+    border: var(--secondary-color) 1px solid !important;
+    background: #fff !important;
+    color: var(--secondary-color) !important;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+
+/* media queries necesarios */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        justify-content: space-between !important;
+    }
+}
+
+@media (max-width: 1980px) {
+    .navbar {
+        flex-direction: row !important;
+    }
+}
+
+@media (max-width: 991.5px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .page {
+        padding: 0 1rem !important
+    }
+}

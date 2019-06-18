@@ -1,0 +1,69 @@
+<app-navbar [paginaActual]="current"></app-navbar>
+<section id="principal" class="page">
+    <h1>Bienvenido</h1>
+    <p> En nuestra pagina encontrara toda la informacion correspondiente a nuesto acueducto y los proyectos que se desempeñan día a día</p>
+    <div>
+        <a href="#horarios" class="btn" (click)="cambiarPagina('horarios')">
+            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+        </a>
+    </div>
+</section>
+
+<section id="horarios" class="page">
+    <h1>Horarios</h1>
+    <ul>
+        <li>Lunes: 8:00am-5:00pm</li>
+        <li>Martes: 8:00am-5:00pm</li>
+        <li>Miercoles:8:00am-5:00pm </li>
+        <li>Jueves: 8:00am-5:00pm</li>
+        <li>Viernes: 8:00am-5:00pm</li>
+        <li>Sabado: 8:00am-12:00pm</li>
+        <li>Domingo: Cerrado</li>
+    </ul>
+    <div>
+        <a href="#principal" class="btn btn-dark" (click)="cambiarPagina('principal')">
+            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
+        </a>&nbsp;
+        <a href="#cuentas" class="btn" (click)="cambiarPagina('cuentas')">
+            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+        </a>
+    </div>
+</section>
+
+<section id="cuentas" class="page">
+    <h1>Cuentas</h1>
+    <p>Contamos con diferentes numeros de cuenta a su disposicion para facilitar el pago de los servicios de agua, seguridad y mantenimiento</p>
+    <div>
+        <a href="#horarios" class="btn btn-dark" (click)="cambiarPagina('horarios')">
+            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
+        </a>&nbsp;
+        <a href="#proyectos" class="btn" (click)="cambiarPagina('proyectos')">
+            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+        </a>
+
+    </div>
+</section>
+
+<section id="proyectos" class="page">
+    <h1>Proyectos</h1>
+    <p>Tenemos diferentes proyectos como campañas de reciclaje, resforestacion de diferentes zonas verdes con ayuda de estudiantes de UNA y UTN, enbellecimientos de los parques o zonas de uso compartido de la urbanizacion</p>
+    <div>
+        <a href="#cuentas" class="btn btn-dark" (click)="cambiarPagina('cuentas')">
+            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
+        </a>&nbsp;
+        <a href="#sobrenosotros" class="btn" (click)="cambiarPagina('sobrenosotros')">
+            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+        </a>
+    </div>
+</section>
+
+
+<section id="sobrenosotros" class="page">
+    <h1>Sobre Nosotros</h1>
+    <p>Actualmente el acueducto maneja los servicios de la urbanizacion cifuentes en busca de mejoras se busca actualizar y mejor constantemente nuestro servicio</p>
+    <div>
+        <a href="#proyectos" class="btn" (click)="cambiarPagina('proyectos')">
+            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
+        </a>
+    </div>
+</section>

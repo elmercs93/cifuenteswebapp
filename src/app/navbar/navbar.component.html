@@ -1,0 +1,31 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
+    <div>
+        <a class="navbar-brand" href="#" (click)="cambiarPagina('principal')">Acueducto Cifuentes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    </div>
+    <div>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-cifuentes">
+                <li class="nav-item" [ngClass]="{current: paginaActual==='principal'}">
+                    <a class="nav-link" href="#principal" (click)="cambiarPagina('principal')">Principal</a>
+                </li>
+                <li class="nav-item" [ngClass]="{current: paginaActual==='horarios'}">
+                    <a class="nav-link" href="#horarios" (click)="cambiarPagina('horarios')">Horarios</a>
+                </li>
+                <li class="nav-item" [ngClass]="{current: paginaActual==='cuentas'}">
+                    <a class="nav-link" href="#cuentas" (click)="cambiarPagina('cuentas')">Cuentas</a>
+                </li>
+                <li class="nav-item" [ngClass]="{current: paginaActual==='proyectos'}">
+                    <a class="nav-link" href="#proyectos" (click)="cambiarPagina('proyectos')">Proyectos</a>
+                </li>
+                <li class="nav-item" [ngClass]="{current: paginaActual==='sobrenosotros'}">
+                    <a class="nav-link" href="#sobrenosotros" (click)="cambiarPagina('sobrenosotros')">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
