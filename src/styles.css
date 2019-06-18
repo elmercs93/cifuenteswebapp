@@ -83,6 +83,20 @@ body {
     opacity: 0.6;
 }
 
+.ul-horarios {
+    width: 15rem;
+}
+
+.ul-horarios li {
+    padding: 4px 4px !important;
+}
+
+.alert-danger {
+    font-size: 9pt !important;
+    margin-bottom: 0 !important;
+    margin-top: 3px;
+}
+
 
 /* media queries necesarios */
 

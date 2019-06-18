@@ -10,16 +10,39 @@
 </section>
 
 <section id="horarios" class="page">
-    <h1>Horarios</h1>
-    <ul>
-        <li>Lunes: 8:00am-5:00pm</li>
-        <li>Martes: 8:00am-5:00pm</li>
-        <li>Miercoles:8:00am-5:00pm </li>
-        <li>Jueves: 8:00am-5:00pm</li>
-        <li>Viernes: 8:00am-5:00pm</li>
-        <li>Sabado: 8:00am-12:00pm</li>
-        <li>Domingo: Cerrado</li>
+    <br>
+    <h2>Horarios</h2>
+    <ul class="list-group ul-horarios">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Lunes
+            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Martes
+            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Miercoles
+            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Jueves
+            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Viernes
+            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Sábado
+            <span class="badge badge-primary badge-pill">8:00am - 12:00pm</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Domingo
+            <span class="badge badge-danger badge-pill">Cerrado</span>
+        </li>
     </ul>
+    <p class="alert-danger">No contempla feriados*</p>
     <div>
         <a href="#principal" class="btn btn-dark" (click)="cambiarPagina('principal')">
             Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
