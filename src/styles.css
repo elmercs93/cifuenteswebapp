@@ -44,12 +44,28 @@
     color: var(--secondary-color) !important;
 }
 
+.logo-asada-principal {
+    width: 33px;
+    margin-right: 5px;
+}
+
 
 /* Content */
 
 body {
     overflow: hidden;
+    color: #333 !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
     color: var(--primary-color) !important;
+}
+
+p {
+    font-size: 1.1rem;
 }
 
 .page {
@@ -62,7 +78,7 @@ body {
     padding: 0 4rem;
 }
 
-.btn {
+.btn-p {
     display: inline-block;
     padding: 1rem 2rem;
     background: var(--secondary-color) !important;
@@ -97,6 +113,27 @@ body {
     margin-top: 3px;
 }
 
+.link-recibos {
+    text-decoration: underline !important;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#cuentas {
+    padding-top: 4rem;
+}
+
+.img-cuentas-bancarias {
+    height: 60vh !important;
+}
+
+.img-link-imagen {
+    display: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
 
 /* media queries necesarios */
 
@@ -109,6 +146,15 @@ body {
 @media (max-width: 1980px) {
     .navbar {
         flex-direction: row !important;
+    }
+}
+
+@media(max-width: 629px) {
+    .img-link-imagen {
+        display: block;
+    }
+    .img-cuentas-bancarias {
+        display: none;
     }
 }
 

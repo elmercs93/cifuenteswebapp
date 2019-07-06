@@ -1,41 +1,61 @@
 <app-navbar [paginaActual]="current"></app-navbar>
 <section id="principal" class="page">
     <h1>Bienvenido</h1>
-    <p> En nuestra pagina encontrara toda la informacion correspondiente a nuesto acueducto y los proyectos que se desempeñan día a día</p>
+    <p>
+        En nuestra pagina encontrara toda la informacion correspondiente a nuesto acueducto y los proyectos que se desempeñan día a día.
+    </p>
+    <p>
+        Consultar recibos del agua:
+        <a class="link-recibos" href="http://www.acueductoscr.com/recibos" target="_blank">Consulte aquí</a
+    >
+  </p>
+  <div>
+    <a href="#avisos" class="btn-p" (click)="cambiarPagina('avisos')">
+      Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+    </a>
+        </div>
+</section>
+
+<section id="avisos" class="page">
+    <h2>Avisos Importantes</h2>
+    <p>Aquí va configuracion de todos los Avisos</p>
     <div>
-        <a href="#horarios" class="btn" (click)="cambiarPagina('horarios')">
-            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
-        </a>
+        <a href="#principal" class="btn-p btn-dark" (click)="cambiarPagina('principal')">
+      Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i> </a
+    >&nbsp;
+    <a href="#horarios" class="btn-p" (click)="cambiarPagina('horarios')">
+      Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+    </a>
     </div>
 </section>
 
 <section id="horarios" class="page">
-    <br>
+    <br />
     <h2>Horarios</h2>
     <ul class="list-group ul-horarios">
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Lunes
-            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+            <span class="badge badge-primary badge-pill">8:00am - 12:00md</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Martes
-            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+            <span class="badge badge-primary badge-pill">8:00am - 12:00md</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Miercoles
-            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+            <span class="badge badge-primary badge-pill">8:00am - 12:00md</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Jueves
-            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+            <span class="badge badge-primary badge-pill">8:00am - 12:00md</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Viernes
-            <span class="badge badge-primary badge-pill">8:00am - 5:00pm</span>
+            <span class="badge badge-primary badge-pill">8:00am - 12:00md</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Sábado
-            <span class="badge badge-primary badge-pill">8:00am - 12:00pm</span>
+            <span class="badge badge-primary badge-pill">8:00am - 12:00md</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Domingo
@@ -44,49 +64,99 @@
     </ul>
     <p class="alert-danger">No contempla feriados*</p>
     <div>
-        <a href="#principal" class="btn btn-dark" (click)="cambiarPagina('principal')">
-            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
-        </a>&nbsp;
-        <a href="#cuentas" class="btn" (click)="cambiarPagina('cuentas')">
-            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
-        </a>
+        <a href="#avisos" class="btn-p btn-dark" (click)="cambiarPagina('avisos')">
+      Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i> </a
+    >&nbsp;
+    <a href="#cuentas" class="btn-p" (click)="cambiarPagina('cuentas')">
+      Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+    </a>
     </div>
 </section>
 
 <section id="cuentas" class="page">
-    <h1>Cuentas</h1>
-    <p>Contamos con diferentes numeros de cuenta a su disposicion para facilitar el pago de los servicios de agua, seguridad y mantenimiento</p>
-    <div>
-        <a href="#horarios" class="btn btn-dark" (click)="cambiarPagina('horarios')">
-            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
-        </a>&nbsp;
-        <a href="#proyectos" class="btn" (click)="cambiarPagina('proyectos')">
-            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
-        </a>
-
+    <h2>Cuentas</h2>
+    <p>
+        Contamos con diferentes formas de pago a su disposicion para facilitar el pago de los servicios de agua, seguridad y mantenimiento
+    </p>
+    <img src="../../assets/img/transferencias.jpeg" class="img-fluid img-cuentas-bancarias" alt="Responsive image" />
+    <a href="../../assets/img/transferencias.jpeg" class="img-link-imagen" target="_blank">Ver Cuentas</a
+  >
+  <div>
+    <a
+      href="#horarios"
+      class="btn-p btn-dark"
+      (click)="cambiarPagina('horarios')"
+    >
+      Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i> </a
+    >&nbsp;
+    <a href="#proyectos" class="btn-p" (click)="cambiarPagina('proyectos')">
+      Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+    </a>
     </div>
 </section>
 
 <section id="proyectos" class="page">
-    <h1>Proyectos</h1>
-    <p>Tenemos diferentes proyectos como campañas de reciclaje, resforestacion de diferentes zonas verdes con ayuda de estudiantes de UNA y UTN, enbellecimientos de los parques o zonas de uso compartido de la urbanizacion</p>
+    <h2>Proyectos</h2>
+    <p>
+        Tenemos diferentes proyectos como campañas de reciclaje, resforestacion de diferentes zonas verdes con ayuda de estudiantes de UNA y UTN, enbellecimientos de los parques o zonas de uso compartido de la urbanizacion
+    </p>
     <div>
-        <a href="#cuentas" class="btn btn-dark" (click)="cambiarPagina('cuentas')">
-            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
-        </a>&nbsp;
-        <a href="#sobrenosotros" class="btn" (click)="cambiarPagina('sobrenosotros')">
-            Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
-        </a>
+        <a href="#cuentas" class="btn-p btn-dark" (click)="cambiarPagina('cuentas')">
+      Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i> </a
+    >&nbsp;
+    <a
+      href="#sobrenosotros"
+      class="btn-p"
+      (click)="cambiarPagina('sobrenosotros')"
+    >
+      Siguiente&nbsp;<i class="fas fa-arrow-circle-down"></i>
+    </a>
     </div>
 </section>
 
-
 <section id="sobrenosotros" class="page">
-    <h1>Sobre Nosotros</h1>
-    <p>Actualmente el acueducto maneja los servicios de la urbanizacion cifuentes en busca de mejoras se busca actualizar y mejor constantemente nuestro servicio</p>
+    <h2>Sobre Nosotros</h2>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-angle-down"></i>  Mision
+          </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>
+                        Abastecer de agua potable en calidad, cantidad y continuidad, a la población de la Urbanización Cifuentes, con un servicio al cliente eficaz y en apego al marco legal aplicable según los requerimientos y exigencias del entorno, contribuyendo al desarrollo
+                        socio económico y ambiental de la comunidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-angle-down"></i> Vision
+          </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>
+                        Ser la Asociación Administradora de nuestro Acueducto líder en la gestión integral del recurso hídrico, comprometida con la excelencia en el servicio al cliente y asegurar el suministro de agua potable a las futuras generaciones de manera sostenible con
+                        el medio ambiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div>
-        <a href="#proyectos" class="btn" (click)="cambiarPagina('proyectos')">
-            Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
-        </a>
+        <a href="#proyectos" class="btn-p" (click)="cambiarPagina('proyectos')">
+      Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i>
+    </a>
     </div>
 </section>
