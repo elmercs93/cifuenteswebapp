@@ -5,6 +5,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
     </div>
     <div>
 
@@ -29,6 +30,10 @@
                 <li class="nav-item" [ngClass]="{current: paginaActual==='sobrenosotros'}">
                     <a class="nav-link" href="#sobrenosotros" (click)="cambiarPagina('sobrenosotros')">Sobre Nosotros</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/login']"> <i class="fas fa-user"></i> Login</a>
+                </li>
+
             </ul>
         </div>
     </div>

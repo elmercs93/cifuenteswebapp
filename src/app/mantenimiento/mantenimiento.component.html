@@ -1,0 +1,73 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light ">
+    <div>
+
+        <a class="navbar-brand" [routerLink]="['/mantenimiento']"> <img src="../../assets/img/logos asada.png" class="logo-asada-principal" alt="">Acueducto Cifuentes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+    </div>
+    <div>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-cifuentes">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="logOut()"> <i class="fas fa-user"></i> Cerrar Session</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container-avisos">
+    <div class="container text-center  m-10">
+
+        <h2>Mantenimiento de Avisos</h2>
+    </div>
+    <hr>
+    <div class="avisos-form-content m-30">
+        <div class="form-datos-aviso">
+            <h4>Nuevo Aviso</h4>
+            <form (ngSubmit)="onSubmit(f.value)" #f="ngForm">
+                <div class="form-group">
+                    <label for="titulo">T&iacute;tulo</label>
+                    <input ngModel name="titulo" type="text" class="form-control" id="titulo" aria-describedby="titulo" placeholder="Digite el título" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <input ngModel name="mensaje" type="text" class="form-control" id="mensaje" placeholder="Digite el Mensaje" required>
+                </div>
+                <button [disabled]="f.invalid" class="btn btn-outline-primary">Guardar</button>
+            </form>
+        </div>
+        <div class="form-datos-aviso">
+            <h4> Avisos Actuales</h4>
+            <div class="container-lista-avisos">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">T&iacute;tulo</th>
+                            <th scope="col">Mensaje</th>
+                            <th scope="col">Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let aviso of this.authService.avisos">
+                            <td>{{aviso.titulo}}</td>
+                            <td>{{aviso.mensaje}}</td>
+                            <td><button class="btn btn-outline-danger" (click)="borrarAviso(aviso.id)"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="top" title="Borrar"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer-mantenimiento">
+    <div class="text-center">
+        Cifuentes Web App &copy;2019.
+    </div>
+</footer>
