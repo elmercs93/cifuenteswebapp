@@ -1,18 +1,16 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
     <div>
 
-        <a class="navbar-brand" [routerLink]="['/mantenimiento']"> <img src="../../assets/img/logos asada.png" class="logo-asada-principal" alt="">Acueducto Cifuentes</a>
+        <a class="navbar-brand" [routerLink]="['/mantenimiento']"> <img src="../../assets/img/logos asada.png" class="logo-asada-principal" alt=""><span class="opcional-titulo">Acueducto</span> Cifuentes</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
 
     </div>
     <div>
-
-
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-cifuentes">
-                <li class="nav-item">
+                <li class="nav-item cursor">
                     <a class="nav-link" (click)="logOut()"> <i class="fas fa-user"></i> Cerrar Session</a>
                 </li>
             </ul>

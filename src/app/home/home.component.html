@@ -18,7 +18,23 @@
 
 <section id="avisos" class="page">
     <h2>Avisos Importantes</h2>
-    <p>Aquí va configuracion de todos los Avisos</p>
+    <!-- <div class="container-lista-avisos">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Aviso</th>
+                    <th scope="col"><i class="fas fa-exclamation-triangle triangle_red"></i> Detalle Aviso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let aviso of this.authService.avisos">
+                    <td>{{aviso.titulo}}</td>
+                    <td>{{aviso.mensaje}}</td>
+                </tr>
+            </tbody>
+        </table> 
+    </div> -->
+    Aquí van los mensajes ingresados desde el mantenimiento.
     <div>
         <a href="#principal" class="btn btn-p btn-dark" (click)="cambiarPagina('principal')">
       Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i> </a
@@ -97,8 +113,9 @@
 
 <section id="proyectos" class="page">
     <h2>Proyectos</h2>
-    <p>
-        Tenemos diferentes proyectos como campañas de reciclaje, resforestacion de diferentes zonas verdes con ayuda de estudiantes de UNA y UTN, enbellecimientos de los parques o zonas de uso compartido de la urbanizacion
+    <p class="texto-proyectos">
+        Tenemos diferentes proyectos como campañas de reciclaje, reforestaci&oacute;n de diferentes zonas verdes, embellecimiento de los parques o zonas de uso compartido de la urbanización todo esto con ayuda de diferentes areas como voluntariados, estudiantes
+        de UNA y estudiantes de la UTN.
     </p>
     <div>
         <a href="#cuentas" class="btn btn-p btn-dark" (click)="cambiarPagina('cuentas')">

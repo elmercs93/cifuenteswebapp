@@ -24,9 +24,7 @@ export class AuthService {
   ) {}
 
   initAuthListener() {
-    this.afAuth.authState.subscribe((fbUser: firebase.User) => {
-      console.log(fbUser);
-    });
+    this.afAuth.authState.subscribe((fbUser: firebase.User) => {});
   }
   login(email: string, password: string) {
     this.afAuth.auth

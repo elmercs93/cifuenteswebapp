@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -6,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   current: string;
-  constructor() { 
+  constructor(public authService: AuthService) { 
   }
 
   ngOnInit() {
-       this.current=localStorage.getItem("paginaActual");
+       localStorage.setItem('paginaActual', 'principal');
+       this.current = localStorage.getItem('paginaActual');
+       this.authService.cargarAvisos();
   }
-  
+
   cambiarPagina(pagina: string){
     this.current = pagina;
-    localStorage.setItem("paginaActual", pagina);
+    localStorage.setItem('paginaActual', pagina);
   }
 
 

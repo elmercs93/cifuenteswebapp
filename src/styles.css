@@ -76,6 +76,10 @@ p {
     font-size: 1.1rem;
 }
 
+.triangle_red {
+    color: red;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -240,6 +244,15 @@ p {
     }
 }
 
+@media (max-width: 415px) {
+    .page {
+        padding: 0 1rem !important;
+    }
+    .card-body {
+        padding: 0 !important;
+    }
+}
+
 @media (max-width: 991.5px) {
     .navbar {
         flex-direction: column !important;
@@ -249,5 +262,24 @@ p {
 @media (max-width: 320px) {
     .page {
         padding: 0 1rem !important
+    }
+    .card-body>p {
+        font-size: 14px !important;
+    }
+    .opcional-titulo {
+        display: none;
+    }
+    .form-control {
+        width: 80vw !important;
+    }
+    .container-lista-avisos {
+        width: 92vw !important;
+        height: 290px;
+    }
+    .form-datos-aviso {
+        padding: 0 !important;
+    }
+    h2 {
+        font-size: 1.5rem !important;
     }
 }
