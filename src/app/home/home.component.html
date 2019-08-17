@@ -18,7 +18,7 @@
 
 <section id="avisos" class="page">
     <h2>Avisos Importantes</h2>
-    <!-- <div class="container-lista-avisos">
+    <div class="container-lista-avisos">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -32,9 +32,8 @@
                     <td>{{aviso.mensaje}}</td>
                 </tr>
             </tbody>
-        </table> 
-    </div> -->
-    Aquí van los mensajes ingresados desde el mantenimiento.
+        </table>
+    </div>
     <div>
         <a href="#principal" class="btn btn-p btn-dark" (click)="cambiarPagina('principal')">
       Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i> </a
@@ -113,10 +112,34 @@
 
 <section id="proyectos" class="page">
     <h2>Proyectos</h2>
-    <p class="texto-proyectos">
-        Tenemos diferentes proyectos como campañas de reciclaje, reforestaci&oacute;n de diferentes zonas verdes, embellecimiento de los parques o zonas de uso compartido de la urbanización todo esto con ayuda de diferentes areas como voluntariados, estudiantes
-        de UNA y estudiantes de la UTN.
-    </p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Proyecto</th>
+                <th scope="col">Documento Detallado del Proyecto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Proyecto 2018</td>
+                <td>
+                    <a href="../../assets/res/PROYECTOS 2018.pdf" target="_self" download="Proyectos2018.pdf">Descargar Proyectos 2018</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Proyecto de Pruebas de Laboratorio </td>
+                <td>
+                    <a href="../../assets/res/LABORATORIO NACIONAL.pdf" target="_self" download="DocumentoLaboratorio.pdf">Descargar Documento Laboratorio</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Proyecto de Educación Ambiental </td>
+                <td>
+                    <a href="../../assets/res/EDUCACION AMBIENTAL.pdf" target="_self" download="EducacionAmbiental.pdf">Descargar Documento Proyecto</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <div>
         <a href="#cuentas" class="btn btn-p btn-dark" (click)="cambiarPagina('cuentas')">
       Anterior&nbsp;<i class="fas fa-arrow-circle-up"></i> </a

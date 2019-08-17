@@ -6,7 +6,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MantenimientoComponent } from './mantenimiento/mantenimiento.component';
-import { AvisosComponent } from './mantenimiento/avisos/avisos.component';
 
 // import del routing
 import { AppRoutingModule } from './app-routing-module';
@@ -33,7 +32,6 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
     HomeComponent,
     LoginComponent,
     MantenimientoComponent,
-    AvisosComponent,
     SidebarComponent
   ],
   imports: [
